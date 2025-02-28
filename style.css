@@ -2744,8 +2744,8 @@ form .btn {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 120px;
-  height: 120px;
+  width: 220px;
+  height: 220px;
   border-radius: 50%;
   background-color: #ECC80B;
   -webkit-box-align: center;
@@ -3759,7 +3759,7 @@ form .btn {
   height: 500px;
   -webkit-transform: translateY(-80px);
           transform: translateY(-80px);
-  width: 130%;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
