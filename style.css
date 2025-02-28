@@ -4353,11 +4353,18 @@ form .btn {
   height: 1px;
   background-color: #F6F5F3;
   margin-top: 35px;
+  display: flex;
+   justify-content: space-between; /* Ensures equal spacing */
+   align-items: center;
+   flex-wrap: nowrap; /* Prevents wrapping to the next line */
+   gap: 20px; /* Adds spacing between steps */
 }
 .stepper-wrap > div {
   position: absolute;
   z-index: 100;
   top: -33px;
+  text-align: center;
+  flex: 1; /* Ensures equal width for all steps */
 }
 .stepper-wrap > div h6 {
   font-size: 14px;
