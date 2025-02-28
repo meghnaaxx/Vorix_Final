@@ -1720,12 +1720,17 @@ picture.jarallax-img img {
 }
 .price-card .price-info {
   margin-bottom: 40px;
+  text-align: center;
 }
+
+
 .price-card .price-info h6 {
   color: #C8C8CD;
   font-size: 14px;
   margin-bottom: 14px !important;
   opacity: 0.8;
+  text-align: center;
+
 }
 .price-card .price-info .price {
   color: #FFFFFF;
