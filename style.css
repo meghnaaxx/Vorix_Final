@@ -164,6 +164,7 @@ button,
 }
 
 img {
+  max-width: 100%;
   height: auto;
 }
 
@@ -814,11 +815,11 @@ picture.jarallax-img img {
 
 .light-logo {
   display: none;
-  max-width: 180px;
+  max-width:180px;
 }
 
-.dark-logo {
-  max-width: 200px;
+.dark-logo{
+  max-width:200px;
 }
 
 .header-search-btn .btn {
@@ -4500,7 +4501,7 @@ form .btn {
 }
 .faq-image .faq-info h2 {
   color: #0E0E0E;
-  font-size: 35px;
+  font-size: 32px;
   line-height: 1;
   letter-spacing: -1.8px;
 }
