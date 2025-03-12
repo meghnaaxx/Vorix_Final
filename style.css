@@ -2772,25 +2772,48 @@ form .btn {
 .popup-video .video-btn {
   position: relative;
   z-index: 1;
-  -webkit-transition-duration: 500ms;
-          transition-duration: 500ms;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  transition: all 0.5s ease-in-out;
   display: flex;
-  width: 220px;
-  height: 220px;
+  width: 120px;
+  height: 120px;
   border-radius: 50%;
   background-color: #ECC80B;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   color: #FFFFFF;
   font-size: 12px;
   cursor: pointer;
+  box-shadow: 0 0 15px rgba(236, 200, 11, 0.8); /* Initial glow */
+  animation: pulseGlow 2s infinite alternate;
 }
+
+/* Add Play Icon Inside the Button */
+.popup-video .video-btn::before {
+  content: "\25B6"; /* Unicode for Play Icon (▶) */
+  font-size: 60px;
+  color: #ffffff;
+  position: absolute;
+  z-index: 2;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+}
+
+/* Hover Effect */
+.popup-video .video-btn:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 30px rgba(236, 200, 11, 1), 0 0 40px rgba(236, 200, 11, 0.8);
+}
+
+/* Glowing Animation */
+@keyframes pulseGlow {
+  0% {
+    box-shadow: 0 0 10px rgba(236, 200, 11, 0.7);
+  }
+  100% {
+    box-shadow: 0 0 25px rgba(236, 200, 11, 1), 0 0 35px rgba(236, 200, 11, 0.6);
+  }
+}
+
+/* Video Sonar Effect */
 .popup-video .video-btn .video-sonar {
   position: absolute;
   width: 100%;
@@ -2800,9 +2823,9 @@ form .btn {
   left: 0;
   z-index: -10;
   background-color: #ECC80B;
-  -webkit-animation: video-sonar 2s linear infinite;
-          animation: video-sonar 2s linear infinite;
+  animation: video-sonar 2s linear infinite;
 }
+
 .popup-video .video-btn .video-sonar::before {
   position: absolute;
   width: 180px;
@@ -2814,6 +2837,7 @@ form .btn {
   left: -30px;
   z-index: -100;
 }
+
 .popup-video .video-btn .video-sonar::after {
   position: absolute;
   width: 150px;
@@ -2825,6 +2849,7 @@ form .btn {
   left: -15px;
   z-index: -50;
 }
+
 
 @-webkit-keyframes video-sonar {
   0% {
