@@ -168,6 +168,10 @@ img {
   height: auto;
 }
 
+
+
+
+
 input:required,
 textarea:required {
   -webkit-box-shadow: none !important;
@@ -2211,6 +2215,35 @@ picture.jarallax-img img {
   line-height: 1.3;
   letter-spacing: -0.6px;
 }
+
+/* Medium screens (tablets) */
+@media (max-width: 1024px) {
+  .portfolio-content-two h3 {
+      font-size: 24px;
+  }
+}
+
+/* Small screens (mobile) */
+@media (max-width: 768px) {
+  .portfolio-content-two h3 {
+      font-size: 18px;
+  }
+}
+
+/* Extra small screens */
+@media (max-width: 480px) {
+  .portfolio-content-two h3 {
+      font-size: 14px;
+  }
+}
+
+/* Very small screens */
+@media (max-width: 360px) {
+  .portfolio-content-two h3 {
+      font-size: 12px;
+  }
+}
+
 
 .portfolio-swiper-navigation {
   position: relative;
