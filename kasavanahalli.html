@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+<style>
+   #property-showcase {
+    max-width: 1200px;
+    margin: auto;
+    padding: 2rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+.property-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 1rem;
+    margin-bottom: 2rem;
+}
+
+.property-header h2 {
+    font-size: 1.8rem;
+    color: #222;
+    margin: 0;
+    flex-grow: 1;
+}
+
+.property-info {
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    font-size: 1rem;
+    color: #444;
+}
+
+.property-info span {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 1rem;
+    color: #555;
+}
+
+.share-btn {
+    background: none;
+    border: none;
+    font-size: 1rem;
+    color: #007bff;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-weight: bold;
+}
+
+.share-btn:hover {
+    color: #0056b3;
+}
+
+/* Property Gallery Styling */
+.property-gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+.main-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.gallery-thumbnails {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+}
+
+.gallery-thumbnails img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+
+.gallery-thumbnails img:hover {
+    transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .property-header {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+   
+
+    .property-gallery {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .property-info {
+        flex-direction: row;
+    }
+
+    .gallery-thumbnails {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+</style>
+
+<section id="property-showcase">
+    <div class="property-header">
+        <h2>Bloom, Kasavanahalli</h2>
+        <div class="property-info">
+            <span>🏠 3 BHK Apartment</span>
+            <span>📏 1300 Sq. Ft</span>
+            <span>🚗 Parking</span>
+            <span>📍 3rd Floor</span>
+        </div>
+        <button class="share-btn">🔗 Share</button>
+    </div>
+
+    <div class="property-gallery">
+        <div class="main-image">
+            <img src="img\bg-img\gallery1.jpeg" alt="Main Property Image">
+        </div>
+        <div class="gallery-thumbnails">
+            <img src="img\bg-img\gallery2.jpeg" alt="Thumbnail 1">
+            <img src="img\bg-img\gallery3.jpeg" alt="Thumbnail 2">
+            <img src="img\bg-img\gallery4.jpeg" alt="Thumbnail 3">
+            <img src="img\bg-img\gallery5.jpeg" alt="Thumbnail 4">
+        </div>
+    </div>
+</section>
+
+
+
+<!-- about-->
+
+<style>
+      .property-card {
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            padding: 20px;
+            max-width: 600px;
+            margin: auto;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .property-title {
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+
+        .property-details {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            font-size: 1.1rem;
+        }
+
+        .detail {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            flex: 1 1 45%;
+        }
+
+        .about-property {
+            margin-top: 20px;
+            font-size: 1rem;
+            line-height: 1.6;
+        }
+
+        /* Responsive Styles */
+        @media screen and (max-width: 768px) {
+            .property-details {
+                flex-direction: column;
+            }
+
+            .detail {
+                flex: 1 1 100%;
+            }
+
+            .about-property {
+                font-size: 0.95rem;
+                padding: 0 15px;
+                text-align: justify;
+            }
+        }
+
+        @media screen and (max-width: 480px) {
+            .about-property {
+                font-size: 0.9rem;
+                padding: 0 10px;
+            }
+        }
+</style>
+
+<div class="property-card">
+ 
+
+    <div class="about-property">
+        <h2>About This Property</h2>
+        <p>Discover an inviting blend of comfort and style in this charming 3BHK located in the heart of Kasavanahalli, Sarjapur Road. The airy, open-plan layout welcomes you with ample natural light, showcasing a tastefully furnished living area that flows seamlessly into a cozy dining space—perfect for family gatherings.</p>
+        <p>Modern fittings, elegant lighting, and soft pastel accents elevate the interiors, while large windows ensure ventilation throughout the day. Each bedroom is thoughtfully designed for both functionality and relaxation, offering generous storage and tranquil views.</p>
+        <p>Strategically situated near schools, supermarkets, and major workplaces, this residence offers easy connectivity and a hassle-free commute.</p>
+    </div>
+</div>
+
+</body>
+</html>
