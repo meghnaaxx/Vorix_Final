@@ -343,8 +343,8 @@
                   <div class="d-flex align-items-center gap-3 wow fadeInUp" data-wow-duration="1000ms"
                      data-wow-delay="900ms">
                      <div class="imgs-group">
-                        <img src="img/bg-img/2.jpg" alt="">
-                        <img src="img/bg-img/3.jpg" alt="">
+                        <img src="img\bg-img\gallery2.jpeg" alt="">
+                        <img src="img\bg-img\gallery3.jpeg" alt="">
                         <div><span class="counter">10</span>k</div>
                      </div>
                      <h6 class="mb-0">Ready To Get Our <br>
@@ -413,7 +413,7 @@
   /* Card Styling */
   .listing-card {
       background: #fff;
-      border-radius: 2.5rem 2.5rem 0 0;
+      border-radius: 1.2em;
       box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
       overflow: hidden;
       width: 100%;
@@ -439,11 +439,11 @@
   }
 
   .listing-info h3 {
-    color: black;
+    color: white;
     font-size: 1.2rem;
     /* margin-bottom: 5px; */
-    background-color: #ECC80B;
-    padding: 1rem;
+    background-color: #0943A0;
+    margin: 0px;
 }
 .listing-info p {
     color: rgb(255 255 255);
@@ -467,7 +467,7 @@
     border-radius: 5px;
     margin-left: 1rem;
     padding-bottom: 0.5rem;
-    padding-top: 1em;
+    /* padding-top: 1em; */
 }
   /* Responsive Adjustments */
   @media (max-width: 768px) {
@@ -491,15 +491,19 @@
 
 
 
-
 <section class="similar-listings">
    <div class="listings-container">
  
      <a href="koramangala/noireluxe-koramangala.html" class="listing-card" id="listing1">
        <img src="img/bg-img/noire.jpeg" alt="Property 1">
        <div class="listing-info">
-         <h3>Noire Luxe</h3>
-         <p>1 BHK | Most Selling</p>
+         <div class="title-box">
+           <div class="title-line">
+             <h3>Noire Luxe</h3>
+             <span class="bhk-type">1 BHK</span>
+           </div>
+           <small class="tag-line">Most Selling</small>
+         </div>
          <ul>
            <li>✓ Transparent Pricing</li>
            <li>✓ Flexible Living Options</li>
@@ -514,8 +518,13 @@
      <a href="koramangala/altliving.html" class="listing-card" id="listing2">
        <img src="img/bg-img/alt.jpeg" alt="Property 2">
        <div class="listing-info">
-         <h3>Alt Living</h3>
-         <p>2 BHK</p>
+         <div class="title-box">
+           <div class="title-line">
+             <h3>Alt Living</h3>
+             <span class="bhk-type">2 BHK</span>
+           </div>
+           <small class="tag-line">Hot Pick</small>
+         </div>
          <ul>
            <li>✓ Transparent Pricing</li>
            <li>✓ Flexible Living Options</li>
@@ -530,8 +539,13 @@
      <a href="koramangala/casasol.html" class="listing-card" id="listing3">
        <img src="img/bg-img/casa.jpeg" alt="Property 3">
        <div class="listing-info">
-         <h3>Casa Sol</h3>
-         <p>1 BHK | Brand New</p>
+         <div class="title-box">
+           <div class="title-line">
+             <h3>Casa Sol</h3>
+             <span class="bhk-type">1 BHK</span>
+           </div>
+           <small class="tag-line">Brand New</small>
+         </div>
          <ul>
            <li>✓ Transparent Pricing</li>
            <li>✓ Flexible Living Options</li>
@@ -546,8 +560,13 @@
      <a href="koramangala/johnbhk.html" class="listing-card" id="listing4">
        <img src="img/bg-img/john.jpeg" alt="Property 4">
        <div class="listing-info">
-         <h3>John's BHK</h3>
-         <p>1 BHK | Value Deal</p>
+         <div class="title-box">
+           <div class="title-line">
+             <h3>John's BHK</h3>
+             <span class="bhk-type">1 BHK</span>
+           </div>
+           <small class="tag-line">Value Deal</small>
+         </div>
          <ul>
            <li>✓ Transparent Pricing</li>
            <li>✓ Flexible Living Options</li>
@@ -562,8 +581,13 @@
      <a href="koramangala/silqabode.html" class="listing-card" id="listing5">
        <img src="img/bg-img/silq.jpeg" alt="Property 5">
        <div class="listing-info">
-         <h3>Silq Abode</h3>
-         <p>1 BHK | Best Seller</p>
+         <div class="title-box">
+           <div class="title-line">
+             <h3>Silq Abode</h3>
+             <span class="bhk-type">1 BHK</span>
+           </div>
+           <small class="tag-line">Best Seller</small>
+         </div>
          <ul>
            <li>✓ Transparent Pricing</li>
            <li>✓ Flexible Living Options</li>
@@ -578,8 +602,12 @@
      <a href="koramangala/modlife.html" class="listing-card" id="listing6">
        <img src="img/bg-img/mod.jpeg" alt="Property 6">
        <div class="listing-info">
-         <h3>Modlife</h3>
-         <p>1 BHK</p>
+         <div class="title-box">
+           <div class="title-line">
+             <h3>Modlife</h3>
+             <span class="bhk-type">1 BHK</span>
+           </div>
+         </div>
          <ul>
            <li>✓ Transparent Pricing</li>
            <li>✓ Flexible Living Options</li>
@@ -594,8 +622,12 @@
      <a href="koramangala/vierraliving.html" class="listing-card" id="listing7">
        <img src="koramangala/cdn.prod.website-files.com/6593ed11d5ad65d107dfe76c/vierra/v3.jpeg" alt="Property 7">
        <div class="listing-info">
-         <h3>Vierra Living</h3>
-         <p>1 BHK</p>
+         <div class="title-box">
+           <div class="title-line">
+             <h3>Vierra Living</h3>
+             <span class="bhk-type">1 BHK</span>
+           </div>
+         </div>
          <ul>
            <li>✓ Transparent Pricing</li>
            <li>✓ Flexible Living Options</li>
@@ -614,18 +646,17 @@
 <style>
 
 .whatsapp-btn {
-   all:unset;
-  align-self: flex-start;
-  padding: 8px 12px;
-  background-color: #25D366;
-  color: white;
-  border-radius: 6px;
-  font-weight: bold;
-  font-size: 0.95rem;
-  text-decoration: none;
-  transition: background-color 0.3s ease;
+    all: unset;
+    align-self: flex-start;
+    padding: 8px 12px;
+    background-color: #25D366;
+    color: white;
+    border-radius: 6px;
+    font-weight: bold;
+    font-size: 0.6rem;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
 }
-
 .whatsapp-btn:hover {
   background-color: #1ebe5d;
 }
@@ -657,12 +688,68 @@
     list-style-type: none;
     border-radius: 5px;
     margin-left: 0.2rem;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .similar-listings .listing-info ul li {
     margin: 5px 0;
     font-size: 0.9em;
+}
+
+.bhk-type{
+   element.style {
+    color: #ffffff;
+    padding: 0;
+    padding-bottom: 0px;
+    font-size: 0.7rem;
+    border: 1px solid red;
+    padding: 0.4em;
+    border-radius: 1em;
+    background-color: red;
+}
+}
+
+.title-box {
+    background-color: #0943A0;
+    display: flex
+;
+    flex-direction: column;
+    gap: 0.3em;
+    padding-bottom: 0.6em;
+}
+
+.title-line {
+    margin: 0 !important;
+    display: flex
+;
+    justify-content: space-between;
+    padding-left: 0.6rem;
+    padding-right: 0.6rem;
+    padding-top: 0.3rem;
+    padding-bottom: 0px !important;
+    margin-bottom: 0px !important;
+}
+.bhk-type {
+    padding-top: 0.5em;
+    font-size: 0.8em;
+    color: #dcd2d2;
+    /* border-radius: 1.4em; */
+    /* border: 1px solid red; */
+    /* padding: 0 !important; */
+    /* background-color: red; */
+    margin: 0 !IMPORTANT;
+    line-height: 1 !important;
+    /* padding-bottom: 0.3em !important; */
+}
+.tag-line {
+    align-self: flex-start;
+    padding-left: 0.6rem;
+    color: black;
+    font-size: 0.55rem;
+    border: 1px solid blue;
+    padding: 0.3em;
+    margin-left: 1em;
+    border-radius: 1em;
+    background: #ECC80B;
 }
 
 </style>
@@ -1772,7 +1859,7 @@ GHARPAYY streamlines the process with a customer-first approach.
                         <div class="dot"></div>
                         <a href="#">Avoiding Common Pitfalls in the Bangalore Rental Market</a>
                      </div>
-                     <a class="post-title" href="blog-details.html">Providing brilliant ideas For your businessNavigating the rental market in Bangalore can be tricky. Learn about the common pitfalls to avoid, and discover how <b>HOMES's </b>expert consultancy can save you from costly mistakes.</a>
+                     <a class="post-title" href="blog.html">Providing brilliant ideas For your businessNavigating the rental market in Bangalore can be tricky. Learn about the common pitfalls to avoid, and discover how <b>HOMES's </b>expert consultancy can save you from costly mistakes.</a>
                   </div>
                </div>
             </div>
@@ -1787,7 +1874,7 @@ GHARPAYY streamlines the process with a customer-first approach.
                         <div class="dot"></div>
                         <a href="#">The Future of Renting: Trends in Bangalore's Real Estate Market</a>
                      </div>
-                     <a class="post-title" href="blog-details.html"> Stay ahead of the curve by exploring the latest trends in Bangalore's real estate market. Discover how <b>HOMES</b> leverages these trends to help you find the most innovative and convenient flats for rent.</a>
+                     <a class="post-title" href="blog.html"> Stay ahead of the curve by exploring the latest trends in Bangalore's real estate market. Discover how <b>HOMES</b> leverages these trends to help you find the most innovative and convenient flats for rent.</a>
                   </div>
                </div>
             </div>
@@ -1802,7 +1889,7 @@ GHARPAYY streamlines the process with a customer-first approach.
                         <div class="dot"></div>
                         <a href="#">Renting vs. Buying: What's the Right Choice in <br> Bangalore?</a>
                      </div>
-                     <a class="post-title" href="blog-details.html">                      Are you torn between renting and buying a flat in Bangalore? This blog explores the pros and cons of each option and introduces you to <b>HOMES's</b> services, making your decision easier.
+                     <a class="post-title" href="blog.html">                      Are you torn between renting and buying a flat in Bangalore? This blog explores the pros and cons of each option and introduces you to <b>HOMES's</b> services, making your decision easier.
                      </a>
                   </div>
                </div>
