@@ -2317,15 +2317,23 @@ window.onload = function() {
     ></script>
     <script>
       document.addEventListener("DOMContentLoaded", function () {
-        setTimeout(() => {
-          let originImg = document.querySelector(".mapboxgl-marker img");
-          if (originImg) {
-            originImg.src = "cdn.prod.website-files.com/6593ed11d5ad65d107dfe76c/logocompany_light.png"; // Update this URL
-            console.log("Marker updated in HTML!");
+        const observer = new MutationObserver(function () {
+          const markerImg = document.querySelector(".mapboxgl-marker img");
+          if (markerImg && !markerImg.dataset.customized) {
+            markerImg.src = "cdn.prod.website-files.com/6593ed11d5ad65d107dfe76c/logocompany_light.png"; // full URL is safer
+            markerImg.dataset.customized = "true"; // so it doesn't re-update
+            console.log("Map marker icon updated!");
+            observer.disconnect(); // stop watching once it's done
           }
-        }, 0);
+        });
+    
+        observer.observe(document.body, {
+          childList: true,
+          subtree: true,
+        });
       });
     </script>
+    
   </body>
   <!-- Mirrored from www.flent.in/properties/bloom-kasavanahalli by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 19 Mar 2025 13:16:43 GMT -->
 </html>
